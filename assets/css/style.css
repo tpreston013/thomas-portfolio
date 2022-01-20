@@ -92,7 +92,7 @@ h2 {
 }
 
 .content {
-    width: auto;
+    /* width: auto; */
     float: left;
     display: block;
 }
@@ -100,7 +100,7 @@ h2 {
 
 /* About me section */
 
-#about-me p {
+.about-me p {
     font-size: 12px;
     padding: 10px;
     width: 70%;
@@ -124,33 +124,19 @@ h2 {
 
 .work-samples {
     display: flex;
-    flex-wrap: wrap;
     justify-content: flex-start;
     min-height: 100%;
     border-left: 2px solid #31343f;
     width: 70%;
 }
 
-
-
 .big-card {
     background-image: url(../images/ocean.jpg);
-    background-position: center;
+    background-size: auto;
+    position: relative;
     border: 3px solid lightblue;
     padding: 200px;
     display: flex;
-    float: right;
-    margin-left: 20px;
-    width: auto;
-}
-
-.big-card div {
-    background-color: lightblue;
-    position: relative;
-    padding: 5px;
-    font-size: 16px;
-    right: 200px;
-    top: 150px;
 }
 
 .small-card {
@@ -163,49 +149,6 @@ h2 {
     margin-left: 20px;
     width: auto;
 }
-
-.small-card div {
-    background-color: lightblue;
-    position: relative;
-    right: 300px;
-    padding: 5px;
-    font-size: 16px;
-    top: 20px;
-}
-
-.small-card div p {
-    font-size: 12px;
-}
-
-#wall {
-    background-image: url(../images/city.jpg);
-    background-position: left;
-}
-
-#calculator {
-    background-image: url(../images/numbers.jpg);
-    background-position: center;
-}
-
-#puzzles {
-    background-image: url(../images/puzzles.jpg);
-    background-position: left;
-    image-rendering: auto;
-}
-
-#buddy {
-    background-image: url(../images/texture.jpg);
-    background-position: center;
-}
-
-
-
-
-
-
-
-
-
 
 /* Contact Me section */
 
@@ -222,13 +165,12 @@ h2 {
 
 }
 
-#contact-me ul li {
+.contact-me ul li {
     display: inline-block;
     padding: 5px;
     color: #31343f;
     margin: 30px;
     border-bottom: 2px solid #31343f;
-    float: right;
 }
 
 .contact-me li a {
